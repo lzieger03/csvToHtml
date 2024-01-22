@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>$title</h2>
+    <table>
+        <thead id="table-head">
+            <!-- Table head will be inserted here -->
+        </thead>
+        <tbody id="table-body">
+            <!-- Table rows will be inserted here -->
+        </tbody>
+    </table>
+
+    <script>
+        const tableTitles = $table_head;
+        const tableRows = $table_content;
+
+        const tableBody = document.getElementById("table-body");
+        const tableHead = document.getElementById("table-head");
+
+        tableTitles.forEach((row) => {
+            tableHead.innerHTML += row;
+        });
+        tableRows.forEach((row) => {
+            tableBody.innerHTML += row;
+        });
+    </script>
+</body>
+
+<footer>
+    <p>2024 | Lars Zieger(DH 2301)</p>
+</footer>
+</html>
